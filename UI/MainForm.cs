@@ -123,9 +123,13 @@ namespace FreeKantar.UI
             this.Font = new Font("Segoe UI", 10);
 
             try {
-                if (File.Exists("app_icon.png")) {
-                    using (var bitmap = new Bitmap("app_icon.png")) {
-                        this.Icon = Icon.FromHandle(bitmap.GetHicon());
+                var assembly = System.Reflection.Assembly.GetExecutingAssembly();
+                using (Stream? stream = assembly.GetManifestResourceStream("FreeKantar.app_icon.png"))
+                {
+                    if (stream != null) {
+                        using (var bitmap = new Bitmap(stream)) {
+                            this.Icon = Icon.FromHandle(bitmap.GetHicon());
+                        }
                     }
                 }
             } catch { }

@@ -34,27 +34,35 @@ namespace FreeKantar.Services
 
         private void LoadTranslations()
         {
-            string localesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Locales");
+            var assembly = typeof(LanguageService).Assembly;
+            string resourcePrefix = "FreeKantar.Locales.";
             
-            if (Directory.Exists(localesPath))
+            foreach (string resourceName in assembly.GetManifestResourceNames())
             {
-                foreach (var file in Directory.GetFiles(localesPath, "*.json"))
+                if (resourceName.StartsWith(resourcePrefix) && resourceName.EndsWith(".json"))
                 {
                     try
                     {
-                        string langCode = Path.GetFileNameWithoutExtension(file).ToUpper();
-                        string jsonContent = File.ReadAllText(file);
-                        var data = JsonSerializer.Deserialize<Dictionary<string, string>>(jsonContent);
-                        if (data != null)
+                        using (Stream? stream = assembly.GetManifestResourceStream(resourceName))
                         {
-                            _allTranslations[langCode] = data;
+                            if (stream == null) continue;
+                            using (StreamReader reader = new StreamReader(stream))
+                            {
+                                string langCode = resourceName.Replace(resourcePrefix, "").Replace(".json", "").ToUpper();
+                                string jsonContent = reader.ReadToEnd();
+                                var data = JsonSerializer.Deserialize<Dictionary<string, string>>(jsonContent);
+                                if (data != null)
+                                {
+                                    _allTranslations[langCode] = data;
+                                }
+                            }
                         }
                     }
-                    catch { /* Skip corrupted files */ }
+                    catch { /* Skip corrupted resources */ }
                 }
-                
-                if (_allTranslations.Count > 0) return;
             }
+
+            if (_allTranslations.Count > 0) return;
 
             // Bootstrap defaults if Locales folder is missing or empty
             _allTranslations["TR"] = new Dictionary<string, string> {

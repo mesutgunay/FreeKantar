@@ -17,7 +17,14 @@ namespace FreeKantar.Data
             var dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "kantar.db");
             _connectionString = $"Data Source={dbPath};Password={DbPassword};";
             
-            TryMigratePassword(dbPath);
+            // Check if DB exists, if not, it will be created during InitializeDatabase.Open()
+            bool dbExists = File.Exists(dbPath);
+            
+            if (dbExists)
+            {
+                TryMigratePassword(dbPath);
+            }
+            
             InitializeDatabase();
         }
 

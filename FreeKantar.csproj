@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>app_icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,9 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Locales\*.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <EmbeddedResource Include="Locales\*.json" />
+    <EmbeddedResource Include="app_icon.png" />
   </ItemGroup>
 
 </Project>
