@@ -34,7 +34,8 @@ namespace FreeKantar.Services
                     pd.DefaultPageSettings.PaperSize = new PaperSize("Thermal50mm", 197, 500);
                     break;
                 case "StandardKantar":
-                    pd.DefaultPageSettings.PaperSize = new PaperSize("Standard11x24", 433, 945);
+                    pd.DefaultPageSettings.PaperSize = new PaperSize("Standard11x24", 945, 433);
+                    pd.DefaultPageSettings.Landscape = true;
                     break;
                 case "A5Horizontal":
                     pd.DefaultPageSettings.PaperSize = new PaperSize("A5Horizontal", 827, 583);
@@ -138,18 +139,23 @@ namespace FreeKantar.Services
             y += 8;
 
             // 4. Signatures
-            void DrawSig(string label) {
-                g.DrawString(label, headFont, Brushes.Black, leftMargin, y);
+            if (sizeKey == "A5Horizontal" || sizeKey == "StandardKantar") {
+                float secondColX = leftMargin + (contentWidth / 2);
+                
+                g.DrawString(_lang.Translate("DriverSignature"), headFont, Brushes.Black, leftMargin, y);
+                g.DrawString(_lang.Translate("ReceiverSignature"), headFont, Brushes.Black, secondColX, y);
+                
                 y += (baseSize + 12);
                 g.DrawString("________________________________", bodyFont, Brushes.Black, leftMargin, y);
-                y += (baseSize + 10);
-            }
-
-            if (sizeKey == "A5Horizontal" || sizeKey == "StandardKantar") {
-                // Side-by-side for wide formats could be added here, but keep single column for simplicity first
-                DrawSig(_lang.Translate("DriverSignature"));
-                DrawSig(_lang.Translate("ReceiverSignature"));
+                g.DrawString("________________________________", bodyFont, Brushes.Black, secondColX, y);
+                y += (baseSize + 15);
             } else {
+                void DrawSig(string label) {
+                    g.DrawString(label, headFont, Brushes.Black, leftMargin, y);
+                    y += (baseSize + 12);
+                    g.DrawString("________________________________", bodyFont, Brushes.Black, leftMargin, y);
+                    y += (baseSize + 10);
+                }
                 DrawSig(_lang.Translate("DriverSignature"));
                 DrawSig(_lang.Translate("ReceiverSignature"));
             }
