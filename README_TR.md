@@ -6,7 +6,7 @@
 
 ---
 
-### 📥 [Son Sürümü İndir (Taşınabilir EXE)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+### 📥 [Son Sürümü İndir (Legacy & .NET 8)](https://github.com/mesutgunay/FreeKantar/releases/tag/FreeKantar)
 *Kurulum gerektirmez. Sadece indirin ve çalıştırın.*
 
 ---
@@ -43,15 +43,17 @@ Gelişmiş özelliklere (Stok yönetimi, Kayıt temizleme) erişmek için:
 
 ## 🔧 Kurumsal & Pro Çözümler
 `.NET 8` altyapısı ile geliştirilen Otonom Kantar, hız ve stabilite için optimize edilmiştir. Üst segment ihtiyaçlarınız için hazırdır:
-- **ERP/SAP/IFS** Bağlantısı.
-- **SQL Server** veritabanı eşitleme.
-- **AI Destekli** Plaka Tanıma Sistemi (LPR) entegrasyonu.
+- **📸 Plaka Tanıma:** Plakayı otomatik okur, fotoğrafı kaydeder, kaçağı önler.
+- **🔗 ERP & Muhasebe:** Verileriniz SAP, CRM veya kullandığınız muhasebe yazılımına otomatik aksın.
+- **📱 Mobil Takip:** Siz neredeyseniz kantar verileri orada. Anlık bildirimler cebinizde.
+- **📄 E-İrsaliye:** Tartım biter bitmez irsaliyeniz UBL formatında hazır.
+- **📍 GPS Entegrasyonu:** Araçların kantar öncesi ve sonrası konumlarını denetleyin.
 
 ---
 
 ## 📥 Başlangıç
 1. **[Releases](https://github.com/mesutgunay/FreeKantar/releases)** sayfasına gidin.
-2. En güncel `FreeKantar.exe` dosyasını indirin.
+2. En güncel sürümü (Legacy veya .NET 8) indirin.
 3. Bağlantı: İndikatörünüzü bağlayın, Baud Rate ayarını yapın ve tartıma başlayın!
 
 ---

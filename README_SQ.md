@@ -6,7 +6,7 @@
 
 ---
 
-### 📥 [Shkarkoni versionin më të fundit (EXE i lëvizshëm)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+### 📥 [Shkarkoni versionin më të fundit (Legacy & .NET 8)](https://github.com/mesutgunay/FreeKantar/releases/tag/FreeKantar)
 *Nuk kërkohet instalim. Thjesht shkarkoni dhe ekzekutoni.*
 
 ---
@@ -41,9 +41,19 @@ Për të aksesuar veçoritë e avancuara (Menaxhimi i stokut, pastrimi i regjist
 
 ---
 
+## 🔧 Pro & Enterprise Ready
+I ndërtuar mbi `.NET 8`, FreeKantar është i optimizuar për shpejtësi dhe stabilitet. Është gati për integrime në nivel ndërmarrjeje:
+- **📸 Njohja e Targave:** Lexon targat automatikisht, ruan fotot dhe parandalon rrjedhjet.
+- **🔗 ERP & Kontabilitet:** Të dhënat tuaja rrjedhin automatikisht në SAP, CRM ose softuerin tuaj të kontabilitetit.
+- **📱 Ndjekja Mobile:** Të dhënat e peshimit janë kudo që ndodheni. Njoftime të menjëhershme në xhepin tuaj.
+- **📄 E-Fletëngarkesë:** Fletëngarkesa juaj është gati në formatin UBL sapo të përfundojë peshimi.
+- **📍 Integrimi GPS:** Monitoroni vendndodhjet e automjeteve para dhe pas peshores.
+
+---
+
 ## 📥 Si të filloni
 1. Shkoni te seksioni **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
-2. Shkarkoni versionin më të fundit `FreeKantar.exe`.
+2. Shkarkoni versionin më të fundit (Legacy ose .NET 8).
 3. Lidhja: Lidhni treguesin tuaj serial (COM), vendosni shpezhpëndarjen (Baud Rate) dhe filloni peshimin!
 
 ---

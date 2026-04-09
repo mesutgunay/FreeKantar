@@ -6,7 +6,7 @@
 
 ---
 
-### 📥 [Descărcați ultima versiune (EXE portabil)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+### 📥 [Descărcați cea mai recentă versiune (Legacy & .NET 8)](https://github.com/mesutgunay/FreeKantar/releases/tag/FreeKantar)
 *Nu este necesară instalarea. Doar descărcați și rulați.*
 
 ---
@@ -41,9 +41,19 @@ Pentru a accesa funcții avansate (Gestionarea stocurilor, curățarea înregist
 
 ---
 
+## 🔧 Pro & Enterprise Ready
+Bazat pe `.NET 8`, FreeKantar este optimizat pentru viteză și stabilitate. Este pregătit pentru integrări la nivel de întreprindere:
+- **📸 Recunoașterea Plăcuțelor:** Citește automat numerele, salvează fotografii și previne fraudele.
+- **🔗 ERP & Contabilitate:** Datele fluxează automat către SAP, CRM sau software-ul dvs. contabil.
+- **📱 Urmărire Mobilă:** Datele de cântărire sunt oriunde vă aflați. Notificări instantanee în buzunar.
+- **📄 E-Aviz:** Avizul este gata în format UBL imediat ce cântărirea este terminată.
+- **📍 Integrare GPS:** Monitorizați locațiile vehiculelor înainte și după cântar.
+
+---
+
 ## 📥 Cum să începeți
 1. Mergeți la secțiunea **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
-2. Descărcați cea mai recentă versiune `FreeKantar.exe`.
+2. Descărcați cea mai recentă versiune (Legacy sau .NET 8).
 3. Conectivitate: Conectați indicatorul serial (COM), setați rata baud și începeți cântărirea!
 
 ---

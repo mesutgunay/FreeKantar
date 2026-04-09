@@ -6,7 +6,7 @@
 
 ---
 
-### 📥 [Preuzmite poslednju verziju (Portable EXE)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+### 📥 [Preuzmite najnoviju verziju (Legacy & .NET 8)](https://github.com/mesutgunay/FreeKantar/releases/tag/FreeKantar)
 *Nije potrebna instalacija. Samo preuzmite i pokrenite.*
 
 ---
@@ -41,9 +41,19 @@ Za pristup naprednim funkcijama (upravljanje zalihama, brisanje zapisa):
 
 ---
 
+## 🔧 Pro & Enterprise Ready
+Izgrađen na `.NET 8`, FreeKantar je optimizovan za brzinu i stabilnost. Spreman je za integracije na nivou preduzeća:
+- **📸 Prepoznavanje tablica:** Automatski čita tablice, čuva fotografije i sprečava curenje informacija.
+- **🔗 ERP i računovodstvo:** Automatski prenos podataka u SAP, CRM ili vaš računovodstveni softver.
+- **📱 Mobilno praćenje:** Vaši podaci o merenju su tamo gde ste i vi. Trenutna obaveštenja u vašem džepu.
+- **📄 E-Otpremnica:** Vaša otpremnica je spremna u UBL formatu čim se merenje završi.
+- **📍 GPS integracija:** Pratite lokacije vozila pre i posle vage.
+
+---
+
 ## 📥 Kako početi
 1. Idite na odeljak **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
-2. Preuzmite poslednju verziju `FreeKantar.exe`.
+2. Preuzmite najnoviju verziju (Legacy ili .NET 8).
 3. Povezivanje: Povežite svoj serijski indikator (COM), podesite Baud Rate i počnite sa merenjem!
 
 ---

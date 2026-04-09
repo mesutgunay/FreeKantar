@@ -6,7 +6,7 @@
 
 ---
 
-### 📥 [Neueste Version herunterladen (Portable EXE)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+### 📥 [Letzte Version herunterladen (Legacy & .NET 8)](https://github.com/mesutgunay/FreeKantar/releases/tag/FreeKantar)
 *Keine Installation erforderlich. Einfach herunterladen und ausführen.*
 
 ---
@@ -35,15 +35,25 @@ Um auf erweiterte Funktionen zuzugreifen (Lagerverwaltung, Datenbereinigung):
   - Standard-Kantar-Beleg (11x24 cm)
   - A5 Professionelles Querformat
 - **🦾 Admin-Verwaltung:** Fortgeschrittene Lagerverwaltung (Stok), Filterung historischer Daten und sichere Protokolle.
-- **📦 Keine Installation (Portable):** Einzelne Datei `FreeKantar.exe` - einfach herunterladen und ausführen.
+- **📦 Keine Installation (Portable):** Einzelne Datei `FreeKantar.exe` - herunterladen und sofort ausführen.
 - **🛡️ Datensicherheit:** Sofortige Sicherung und Wiederherstellung der SQLite-Datenbank mit einem Klick.
 - **🏷️ White-Label-Belege:** Sauberes Design ohne Fremdbranding.
 
 ---
 
+## 🔧 Pro & Enterprise Ready
+Auf `.NET 8` aufgebaut, ist FreeKantar für Geschwindigkeit und Stabilität optimiert. Es ist bereit für Integrationen auf Unternehmensebene:
+- **📸 Kennzeichenerkennung:** Liest Kennzeichen automatisch, speichert Fotos und verhindert Verluste.
+- **🔗 ERP & Buchhaltung:** Datenfluss zu SAP, CRM oder Ihrer Buchhaltungssoftware automatisieren.
+- **📱 Mobile Verfolgung:** Ihre Wägedaten immer dabei. Sofortige Benachrichtigungen in Ihrer Tasche.
+- **📄 E-Frachtbrief:** Frachtbrief im UBL-Format sofort nach der Wägung bereit.
+- **📍 GPS-Integration:** Überwachen Sie Fahrzeugstandorte vor und nach der Waage.
+
+---
+
 ## 📥 Erste Schritte
 1. Gehen Sie zum Abschnitt **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
-2. Laden Sie die neueste `FreeKantar.exe` herunter.
+2. Laden Sie die neueste Version (Legacy oder .NET 8) herunter.
 3. Verbindung: Schließen Sie Ihren Seriell-Indikator (COM) an, stellen Sie die Baudrate ein und beginnen Sie mit dem Wägen!
 
 ---

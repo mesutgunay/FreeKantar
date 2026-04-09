@@ -6,7 +6,7 @@
 
 ---
 
-### 📥 [Download Latest Version (Portable EXE)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+### 📥 [Download Latest Version (Legacy & .NET 8)](https://github.com/mesutgunay/FreeKantar/releases/tag/FreeKantar)
 *No installation required. Just download and run.*
 
 ---
@@ -43,15 +43,17 @@ To access advanced features (Stock management, Records cleanup):
 
 ## 🔧 Pro & Enterprise Ready
 Built on `.NET 8`, FreeKantar is optimized for speed and stability. It is ready for enterprise-grade integrations:
-- **ERP/SAP/IFS** Connectivity.
-- **SQL Server** database mirroring.
-- **AI-Powered** License Plate Recognition (LPR).
+- **📸 License Plate Recognition:** Automatically reads plates, saves photos, and prevents leakage.
+- **🔗 ERP & Accounting:** Flow your data automatically to SAP, CRM, or your accounting software.
+- **📱 Mobile Tracking:** Control your weighing data from anywhere. Instant notifications in your pocket.
+- **📄 E-Waybill:** Your waybill is ready in UBL format as soon as weighing is finished.
+- **📍 GPS Integration:** Monitor vehicle locations before and after the scale.
 
 ---
 
 ## 📥 Getting Started
 1. Navigate to the **[Releases](https://github.com/mesutgunay/FreeKantar/releases)** section.
-2. Download the latest `FreeKantar.exe`.
+2. Download the latest version (Legacy or .NET 8).
 3. Connectivity: Plug in your Serial (COM) indicator, set the Baud Rate, and start weighing!
 
 ---

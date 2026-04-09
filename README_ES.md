@@ -6,7 +6,7 @@
 
 ---
 
-### 📥 [Descargar última versión (EXE portátil)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+### 📥 [Descargar última versión (Legacy y .NET 8)](https://github.com/mesutgunay/FreeKantar/releases/tag/FreeKantar)
 *No requiere instalación. Solo descargar y ejecutar.*
 
 ---
@@ -41,9 +41,19 @@ Para acceder a funciones avanzadas (Gestión de stock, limpieza de registros):
 
 ---
 
+## 🔧 Pro & Enterprise Ready
+Desarrollado sobre `.NET 8`, FreeKantar está optimizado para velocidad y estabilidad. Está listo para integraciones a nivel empresarial:
+- **📸 Reconocimiento de Matrículas:** Lee matrículas automáticamente, guarda fotos y evita fugas.
+- **🔗 ERP y Contabilidad:** Flujo automático de datos a SAP, CRM o su software contable.
+- **📱 Seguimiento Móvil:** Sus datos de pesaje dondequiera que esté. Notificaciones instantáneas en su bolsillo.
+- **📄 Guía de Remisión Electrónica:** Su guía lista en formato UBL tan pronto como termine el pesaje.
+- **📍 Integración GPS:** Supervise las ubicaciones de los vehículos antes y después de la báscula.
+
+---
+
 ## 📥 Cómo empezar
 1. Vaya a la sección de **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
-2. Descargue el último `FreeKantar.exe`.
+2. Descargue la última versión (Legacy o .NET 8).
 3. Conectividad: Conecte su indicador serie (COM), configure los baudios y empiece a pesar.
 
 ---
