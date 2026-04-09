@@ -20,7 +20,7 @@ namespace FreeKantar.UI
             _db = db;
             _lang = lang;
             InitializeComponent();
-            LoadCurrentSetting();
+            this.Load += LoadCurrentSetting;
         }
 
         private void InitializeComponent()
@@ -84,7 +84,7 @@ namespace FreeKantar.UI
             pnl.Controls.Add(btnSave);
         }
 
-        private void LoadCurrentSetting()
+        private void LoadCurrentSetting(object sender, EventArgs e)
         {
             try {
                 string current = _db.GetSetting("ReceiptSize", "Thermal80");

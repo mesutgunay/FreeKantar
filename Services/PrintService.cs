@@ -27,11 +27,11 @@ namespace FreeKantar.Services
             PrintDocument pd = new PrintDocument();
             
             // Define paper sizes (100 DPI units)
-            // 80mm = ~315, 50mm = ~197, 11x24cm = ~433x945, A5 = ~827x583
+            // Reduced heights for Thermal formats to save paper (~380 units instead of 500)
             switch (sizeKey)
             {
                 case "Thermal50":
-                    pd.DefaultPageSettings.PaperSize = new PaperSize("Thermal50mm", 197, 500);
+                    pd.DefaultPageSettings.PaperSize = new PaperSize("Thermal50mm", 197, 380);
                     break;
                 case "StandardKantar":
                     // 24cm width, 11cm height
@@ -44,7 +44,7 @@ namespace FreeKantar.Services
                     pd.DefaultPageSettings.Landscape = false; // Dimensions are already landscape
                     break;
                 default: // Thermal80
-                    pd.DefaultPageSettings.PaperSize = new PaperSize("Thermal80mm", 315, 500);
+                    pd.DefaultPageSettings.PaperSize = new PaperSize("Thermal80mm", 315, 380);
                     break;
             }
 
