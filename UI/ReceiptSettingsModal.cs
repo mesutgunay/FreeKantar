@@ -86,8 +86,15 @@ namespace FreeKantar.UI
 
         private void LoadCurrentSetting()
         {
-            string current = _db.GetSetting("ReceiptSize", "Thermal80");
-            cbSizes.SelectedValue = current;
+            try {
+                string current = _db.GetSetting("ReceiptSize", "Thermal80");
+                foreach (var item in cbSizes.Items) {
+                    if (item is KeyValuePair<string, string> kvp && kvp.Key == current) {
+                        cbSizes.SelectedItem = item;
+                        break;
+                    }
+                }
+            } catch { }
         }
 
         private void SaveSetting()

@@ -168,7 +168,7 @@ namespace FreeKantar.Services
             y += 5;
             g.DrawString($"{_lang.Translate("Date")}: {DateTime.Now:dd.MM.yyyy HH:mm}", new Font("Segoe UI", baseSize - 1), Brushes.Gray, leftMargin, y);
             y += (baseSize + 2);
-            g.DrawString("Software by FreeKantar", new Font("Segoe UI", baseSize - 2), Brushes.Silver, leftMargin, y);
+            // Footer text removed as requested
         }
     }
 }
