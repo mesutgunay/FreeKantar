@@ -45,7 +45,8 @@
 
 ## 🤝 Контакты и поддержка
 Для корпоративной интеграции или премиум-поддержки:
-- **WhatsApp:** [Написать нам](https://wa.me/yournumber)
+- **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
+- **E-mail:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
 - **Веб-сайт:** [www.otonomkantar.com](http://www.otonomkantar.com)
 
 ---

@@ -24,7 +24,8 @@
 3. Type `AdminMod` into the password box and press Enter.
 4. **Features:** In this panel, you can perform full stock management, edit, or delete historical weighing records.
 
-📞 **Support:** [+90 533 545 16 80](https://wa.me/905335451680)
+📞 **Support:** [+90 533 545 16 80](https://wa.me/905335451680)  
+📧 **E-mail:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
 
 ---
 
@@ -63,7 +64,8 @@
 3. Geben Sie `AdminMod` in das Passwortfeld ein und drücken Sie Enter.
 4. **Funktionen:** In diesem Panel können Sie die gesamte Lagerverwaltung durchführen, historische Wägeprotokolle bearbeiten oder löschen.
 
-📞 **Support:** [+90 533 545 16 80](https://wa.me/905335451680)
+📞 **Support:** [+90 533 545 16 80](https://wa.me/905335451680)  
+📧 **E-mail:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
 
 ---
 

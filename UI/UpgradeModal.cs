@@ -95,7 +95,7 @@ namespace FreeKantar.UI
             contactPanel.Controls.Add(btnWhatsapp);
 
             var lblEmail = new Label { 
-                Text = "E-mail: mesut@otonomkantar.com", 
+                Text = "E-mail: info@otonomkantar.com", 
                 Location = new Point(10, 85), 
                 AutoSize = true, 
                 ForeColor = Color.Gray 

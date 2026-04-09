@@ -46,6 +46,7 @@
 ## 🤝 İletişim & Destek
 Özel kurumsal entegrasyonlar veya premium destek için:
 - **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
+- **E-posta:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
 - **Yönetici Rehberi:** [10 Dilde Gizli Admin Modu Kullanımı](ADMIN_GUIDE.md)
 - **Web Sitesi:** [www.otonomkantar.com](http://www.otonomkantar.com)
 
