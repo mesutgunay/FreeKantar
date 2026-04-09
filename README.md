@@ -1,7 +1,6 @@
 # FreeKantar: Professional Multi-Language Weighing Scale Software 🚛⚖️🌍
 
-[![Language: English](https://img.shields.io/badge/Language-English-blue.svg)](#)
-[![Language: Turkish](https://img.shields.io/badge/Dil-Türkçe-red.svg)](README_TR.md)
+[![EN](https://img.shields.io/badge/Language-EN-blue)](README.md) [![TR](https://img.shields.io/badge/Language-TR-red)](README_TR.md) [![RU](https://img.shields.io/badge/Language-RU-blue)](README_RU.md) [![AR](https://img.shields.io/badge/Language-AR-green)](README_AR.md) [![DE](https://img.shields.io/badge/Language-DE-black)](README_DE.md) [![ES](https://img.shields.io/badge/Language-ES-orange)](README_ES.md) [![RO](https://img.shields.io/badge/Language-RO-blue)](README_RO.md) [![BG](https://img.shields.io/badge/Language-BG-red)](README_BG.md) [![SR](https://img.shields.io/badge/Language-SR-blue)](README_SR.md) [![SQ](https://img.shields.io/badge/Language-SQ-green)](README_SQ.md)
 
 **FreeKantar** is a high-performance, lightweight, and versatile truck scale software designed for modern industrial weighing. Supporting **10 global languages** and **4 distinct receipt formats**, it provides a seamless experience for operators worldwide.
 

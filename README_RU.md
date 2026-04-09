@@ -1,7 +1,6 @@
 # FreeKantar: Профессиональное Мультиязычное ПО для Весов 🚛⚖️🌍
 
-[![Язык: Русский](https://img.shields.io/badge/Язык-Русский-red.svg)](#)
-[![Language: English](https://img.shields.io/badge/Language-English-blue.svg)](README.md)
+[![EN](https://img.shields.io/badge/Language-EN-blue)](README.md) [![TR](https://img.shields.io/badge/Language-TR-red)](README_TR.md) [![RU](https://img.shields.io/badge/Language-RU-blue)](README_RU.md) [![AR](https://img.shields.io/badge/Language-AR-green)](README_AR.md) [![DE](https://img.shields.io/badge/Language-DE-black)](README_DE.md) [![ES](https://img.shields.io/badge/Language-ES-orange)](README_ES.md) [![RO](https://img.shields.io/badge/Language-RO-blue)](README_RO.md) [![BG](https://img.shields.io/badge/Language-BG-red)](README_BG.md) [![SR](https://img.shields.io/badge/Language-SR-blue)](README_SR.md) [![SQ](https://img.shields.io/badge/Language-SQ-green)](README_SQ.md)
 
 **FreeKantar** — это высокопроизводительное, легкое и универсальное программное обеспечение для автомобильных весов, разработанное для современного промышленного взвешивания. Благодаря поддержке **10 языков** и **4 форматов квитанций**, оно обеспечивает удобство работы для операторов по всему миру.
 

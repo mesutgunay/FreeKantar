@@ -1,7 +1,6 @@
 # Otonom Kantar: Profesyonel Çok Dilli Kantar Yazılımı 🚛⚖️🌍
 
-[![Dil: Türkçe](https://img.shields.io/badge/Dil-Türkçe-red.svg)](#)
-[![Language: English](https://img.shields.io/badge/Language-English-blue.svg)](README.md)
+[![EN](https://img.shields.io/badge/Language-EN-blue)](README.md) [![TR](https://img.shields.io/badge/Language-TR-red)](README_TR.md) [![RU](https://img.shields.io/badge/Language-RU-blue)](README_RU.md) [![AR](https://img.shields.io/badge/Language-AR-green)](README_AR.md) [![DE](https://img.shields.io/badge/Language-DE-black)](README_DE.md) [![ES](https://img.shields.io/badge/Language-ES-orange)](README_ES.md) [![RO](https://img.shields.io/badge/Language-RO-blue)](README_RO.md) [![BG](https://img.shields.io/badge/Language-BG-red)](README_BG.md) [![SR](https://img.shields.io/badge/Language-SR-blue)](README_SR.md) [![SQ](https://img.shields.io/badge/Language-SQ-green)](README_SQ.md)
 
 **Otonom Kantar**, modern endüstriyel tartım süreçleri için tasarlanmış, yüksek performanslı ve taşınabilir (portable) bir kantar yazılımıdır. **10 farklı küresel dil** desteği ve **4 farklı fiş formatı** ile dünya standartlarında bir tartım deneyimi sunar.
 
