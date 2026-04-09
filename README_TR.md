@@ -6,11 +6,26 @@
 
 ---
 
+### 📥 [Son Sürümü İndir (Taşınabilir EXE)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+*Kurulum gerektirmez. Sadece indirin ve çalıştırın.*
+
+---
+
 ## 📸 Ekran Görüntüleri
 *(Yakında - Resimlerinizi docs/images/ klasörüne ekleyin)*
 
 ![Ana Ekran](docs/images/01_main_dashboard.png)
 *Modern ve yüksek okunurluklu tartım arayüzü.*
+
+---
+
+## 🔐 Yönetici Modu ve Yönetim
+Gelişmiş özelliklere (Stok yönetimi, Kayıt temizleme) erişmek için:
+- **Kısayol Tuşu:** `Ctrl + Alt + A`
+- **Varsayılan Şifre:** `AdminMod`
+
+![Yönetici Paneli Görseli](docs/images/05_admin_panel.png)
+*Tartım verileriniz üzerinde tam kontrol.*
 
 ---
 
@@ -36,7 +51,7 @@
 ---
 
 ## 📥 Başlangıç
-1. **[Releases](https://github.com/yourusername/FreeKantar/releases)** sayfasına gidin.
+1. **[Releases](https://github.com/mesutgunay/FreeKantar/releases)** sayfasına gidin.
 2. En güncel `FreeKantar.exe` dosyasını indirin.
 3. Bağlantı: İndikatörünüzü bağlayın, Baud Rate ayarını yapın ve tartıma başlayın!
 
@@ -46,7 +61,6 @@
 Özel kurumsal entegrasyonlar veya premium destek için:
 - **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
 - **E-posta:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
-- **Yönetici Rehberi:** [10 Dilde Gizli Admin Modu Kullanımı](ADMIN_GUIDE.md)
 - **Web Sitesi:** [www.otonomkantar.com](http://www.otonomkantar.com)
 
 ---

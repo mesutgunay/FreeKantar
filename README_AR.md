@@ -6,11 +6,26 @@
 
 ---
 
+### 📥 [تنزيل أحدث إصدار (ملف EXE محمول)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+*لا يتطلب التثبيت. فقط قم بالتنزيل والتشغيل.*
+
+---
+
 ## 📸 لقطات الشاشة
 *(قريبًا - ضع صورك في docs/images/)*
 
 ![لوحة التحكم الرئيسية](docs/images/01_main_dashboard.png)
 *واجهة وزن حديثة عالية الوضوح.*
+
+---
+
+## 🔐 وضع المسؤول والإدارة
+للوصول إلى الميزات المتقدمة (إدارة المخزون، تنظيف السجلات):
+- **مفتاح الاختصار:** `Ctrl + Alt + A`
+- **كلمة المرور الافتراضية:** `AdminMod`
+
+![مكان لوحة المسؤول](docs/images/05_admin_panel.png)
+*تحكم كامل في بيانات الوزن الخاصة بك.*
 
 ---
 
@@ -28,7 +43,7 @@
 ---
 
 ## 📥 البداية
-1. انتقل إلى قسم **[Releases](https://github.com/yourusername/FreeKantar/releases)**.
+1. انتقل إلى قسم **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
 2. قم بتنزيل أحدث إصدار من `FreeKantar.exe`.
 3. التوصيل: قم بتوصيل مؤشر التسلسلي (COM)، واضبط معدل الباود، وابدأ الوزن!
 

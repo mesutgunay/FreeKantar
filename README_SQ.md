@@ -6,11 +6,26 @@
 
 ---
 
+### 📥 [Shkarkoni versionin më të fundit (EXE i lëvizshëm)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+*Nuk kërkohet instalim. Thjesht shkarkoni dhe ekzekutoni.*
+
+---
+
 ## 📸 Pamjet e Ekranit (Screenshots)
 *(Së shpejti - Vendosni imazhet tuaja në docs/images/)*
 
 ![Dashboard Kryesor](docs/images/01_main_dashboard.png)
 *Ndërfaqe moderne peshimi me shikueshmëri të lartë.*
+
+---
+
+## 🔐 Modaliteti i Adminit & Menaxhimi
+Për të aksesuar veçoritë e avancuara (Menaxhimi i stokut, pastrimi i regjistrimeve):
+- **Taste Shkurtuese:** `Ctrl + Alt + A`
+- **Fjalëkalimi i paracaktuar:** `AdminMod`
+
+![Hapësira e panelit të adminit](docs/images/05_admin_panel.png)
+*Kontroll i plotë mbi të dhënat tuaja të peshimit.*
 
 ---
 
@@ -28,9 +43,9 @@
 ---
 
 ## 📥 Si të filloni
-1. Shkoni te seksioni **[Releases](https://github.com/yourusername/FreeKantar/releases)**.
+1. Shkoni te seksioni **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
 2. Shkarkoni versionin më të fundit `FreeKantar.exe`.
-3. Lidhja: Lidhni treguesin tuaj serial (COM), vendosni shpejtësinë (Baud Rate) dhe filloni peshimin!
+3. Lidhja: Lidhni treguesin tuaj serial (COM), vendosni shpezhpëndarjen (Baud Rate) dhe filloni peshimin!
 
 ---
 

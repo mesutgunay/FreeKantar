@@ -6,11 +6,26 @@
 
 ---
 
+### 📥 [Изтеглете последната версия (Portable EXE)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+*Не се изисква инсталация. Просто изтеглете и стартирайте.*
+
+---
+
 ## 📸 Скрийншоти
 *(Очаквайте скоро - Поставете вашите изображения в docs/images/)*
 
 ![Главно табло](docs/images/01_main_dashboard.png)
 *Модерен интерфейс за претегляне с висока видимост.*
+
+---
+
+## 🔐 Админ режим и управление
+За достъп до разширени функции (Управление на наличностите, почистване на записи):
+- **Клавишна комбинация:** `Ctrl + Alt + A`
+- **Парола по подразбиране:** `AdminMod`
+
+![Място за админ панел](docs/images/05_admin_panel.png)
+*Пълен контрол над вашите данни за претегляне.*
 
 ---
 
@@ -28,7 +43,7 @@
 ---
 
 ## 📥 Как да започнете
-1. Отидете в секцията **[Releases](https://github.com/yourusername/FreeKantar/releases)**.
+1. Отидете в секцията **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
 2. Изтеглете последната версия на `FreeKantar.exe`.
 3. Свързване: Свържете вашия сериен индикатор (COM), задайте Baud Rate и започнете да теглите!
 
@@ -38,6 +53,6 @@
 За персонализирани корпоративни интеграции или премиум поддръжка:
 - **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
 - **Email:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
-- **Админ ръководство:** [Вижте тайното админ ръководство на 10 езика](ADMIN_GUIDE.md)
+- **Web Sitesi:** [www.otonomkantar.com](http://www.otonomkantar.com)
 
 ---

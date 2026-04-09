@@ -6,11 +6,26 @@
 
 ---
 
-## 📸 Capturi de Ecran
+### 📥 [Descărcați ultima versiune (EXE portabil)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+*Nu este necesară instalarea. Doar descărcați și rulați.*
+
+---
+
+## 📸 Capturi de ecran
 *(În curând - Puneți imaginile în docs/images/)*
 
-![Tablou de Bord Principal](docs/images/01_main_dashboard.png)
+![Tablou de bord principal](docs/images/01_main_dashboard.png)
 *Interfață modernă de cântărire cu vizibilitate ridicată.*
+
+---
+
+## 🔐 Mod Admin și Gestionare
+Pentru a accesa funcții avansate (Gestionarea stocurilor, curățarea înregistrărilor):
+- **Tastă rapidă:** `Ctrl + Alt + A`
+- **Parolă implicită:** `AdminMod`
+
+![Placeholder pentru panoul de administrare](docs/images/05_admin_panel.png)
+*Control total asupra datelor dvs. de cântărire.*
 
 ---
 
@@ -22,13 +37,13 @@
   - Format Orizontal Profesional A5
 - **🦾 Gestionarea Administratorului:** Gestionarea avansată a stocurilor (Stok), filtrarea datelor istorice și înregistrări sigure.
 - **📦 Fără Instalare (Portabil):** Un singur fișier `FreeKantar.exe` - doar descărcați și rulați.
-- **🛡️ Securitatea Datelor:** Backup și restaurare instantanee a bazei de données SQLite cu un singur clic.
+- **🛡️ Securitatea Datelor:** Backup și restaurare instantanee a bazei de date SQLite cu un singur clic.
 - **🏷️ Bonuri White-Label:** Design curat, fără publicitate de la terți.
 
 ---
 
 ## 📥 Cum să începeți
-1. Mergeți la secțiunea **[Releases](https://github.com/yourusername/FreeKantar/releases)**.
+1. Mergeți la secțiunea **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
 2. Descărcați cea mai recentă versiune `FreeKantar.exe`.
 3. Conectivitate: Conectați indicatorul serial (COM), setați rata baud și începeți cântărirea!
 

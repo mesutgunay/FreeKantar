@@ -6,11 +6,26 @@
 
 ---
 
+### 📥 [Download Latest Version (Portable EXE)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+*No installation required. Just download and run.*
+
+---
+
 ## 📸 Screenshots
 *(Coming soon - Place your images in docs/images/)*
 
 ![Main Dashboard](docs/images/01_main_dashboard.png)
 *Modern, high-visibility weighing interface.*
+
+---
+
+## 🔐 Admin Mode & Management
+To access advanced features (Stock management, Records cleanup):
+- **Shortcut Key:** `Ctrl + Alt + A`
+- **Default Password:** `AdminMod`
+
+![Admin Panel Placeholder](docs/images/05_admin_panel.png)
+*Full control over your weighing data.*
 
 ---
 
@@ -36,7 +51,7 @@ Built on `.NET 8`, FreeKantar is optimized for speed and stability. It is ready 
 ---
 
 ## 📥 Getting Started
-1. Navigate to the **[Releases](https://github.com/yourusername/FreeKantar/releases)** section.
+1. Navigate to the **[Releases](https://github.com/mesutgunay/FreeKantar/releases)** section.
 2. Download the latest `FreeKantar.exe`.
 3. Connectivity: Plug in your Serial (COM) indicator, set the Baud Rate, and start weighing!
 
@@ -46,7 +61,6 @@ Built on `.NET 8`, FreeKantar is optimized for speed and stability. It is ready 
 For custom enterprise integrations or premium support:
 - **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
 - **E-mail:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
-- **Admin Guide:** [View 10-Language Secret Admin Guide](ADMIN_GUIDE.md)
 - **Website:** [www.otonomkantar.com](http://www.otonomkantar.com)
 
 ---

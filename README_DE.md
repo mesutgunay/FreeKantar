@@ -6,11 +6,26 @@
 
 ---
 
+### 📥 [Neueste Version herunterladen (Portable EXE)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+*Keine Installation erforderlich. Einfach herunterladen und ausführen.*
+
+---
+
 ## 📸 Screenshots
 *(Demnächst verfügbar - Legen Sie Ihre Bilder in docs/images/ ab)*
 
 ![Haupt-Dashboard](docs/images/01_main_dashboard.png)
 *Moderne Wägeschnittstelle mit hoher Sichtbarkeit.*
+
+---
+
+## 🔐 Admin-Modus & Verwaltung
+Um auf erweiterte Funktionen zuzugreifen (Lagerverwaltung, Datenbereinigung):
+- **Tastenkombination:** `Ctrl + Alt + A`
+- **Standard-Passwort:** `AdminMod`
+
+![Admin-Panel-Platzhalter](docs/images/05_admin_panel.png)
+*Vollständige Kontrolle über Ihre Wägedaten.*
 
 ---
 
@@ -28,7 +43,7 @@
 ---
 
 ## 📥 Erste Schritte
-1. Gehen Sie zum Abschnitt **[Releases](https://github.com/yourusername/FreeKantar/releases)**.
+1. Gehen Sie zum Abschnitt **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
 2. Laden Sie die neueste `FreeKantar.exe` herunter.
 3. Verbindung: Schließen Sie Ihren Seriell-Indikator (COM) an, stellen Sie die Baudrate ein und beginnen Sie mit dem Wägen!
 

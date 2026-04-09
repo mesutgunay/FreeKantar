@@ -6,11 +6,26 @@
 
 ---
 
+### 📥 [Descargar última versión (EXE portátil)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+*No requiere instalación. Solo descargar y ejecutar.*
+
+---
+
 ## 📸 Capturas de Pantalla
 *(Próximamente - Coloque sus imágenes en docs/images/)*
 
 ![Dashboard Principal](docs/images/01_main_dashboard.png)
 *Interfaz de pesaje moderna con alta visibilidad.*
+
+---
+
+## 🔐 Modo Admin y Gestión
+Para acceder a funciones avanzadas (Gestión de stock, limpieza de registros):
+- **Tecla de acceso rápido:** `Ctrl + Alt + A`
+- **Contraseña predeterminada:** `AdminMod`
+
+![Marcador de posición del panel de administración](docs/images/05_admin_panel.png)
+*Control total sobre sus datos de pesaje.*
 
 ---
 
@@ -28,7 +43,7 @@
 ---
 
 ## 📥 Cómo empezar
-1. Vaya a la sección de **[Releases](https://github.com/yourusername/FreeKantar/releases)**.
+1. Vaya a la sección de **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
 2. Descargue el último `FreeKantar.exe`.
 3. Conectividad: Conecte su indicador serie (COM), configure los baudios y empiece a pesar.
 

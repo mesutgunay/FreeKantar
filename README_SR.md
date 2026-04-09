@@ -6,11 +6,26 @@
 
 ---
 
+### 📥 [Preuzmite poslednju verziju (Portable EXE)](https://github.com/mesutgunay/FreeKantar/releases/latest/download/FreeKantar.exe)
+*Nije potrebna instalacija. Samo preuzmite i pokrenite.*
+
+---
+
 ## 📸 Skenovi ekrana (Screenshots)
 *(Uskoro - Postavite vaše slike u docs/images/)*
 
 ![Glavna kontrolna tabla](docs/images/01_main_dashboard.png)
 *Moderni interfejs za merenje sa visokom vidljivošću.*
+
+---
+
+## 🔐 Admin režim i upravljanje
+Za pristup naprednim funkcijama (upravljanje zalihama, brisanje zapisa):
+- **Taster prečica:** `Ctrl + Alt + A`
+- **Podrazumevana lozinka:** `AdminMod`
+
+![Mesto za admin panel](docs/images/05_admin_panel.png)
+*Potpuna kontrola nad vašim podacima merenja.*
 
 ---
 
@@ -28,7 +43,7 @@
 ---
 
 ## 📥 Kako početi
-1. Idite na odeljak **[Releases](https://github.com/yourusername/FreeKantar/releases)**.
+1. Idite na odeljak **[Releases](https://github.com/mesutgunay/FreeKantar/releases)**.
 2. Preuzmite poslednju verziju `FreeKantar.exe`.
 3. Povezivanje: Povežite svoj serijski indikator (COM), podesite Baud Rate i počnite sa merenjem!
 
