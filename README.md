@@ -45,7 +45,8 @@ Built on `.NET 8`, FreeKantar is optimized for speed and stability. It is ready 
 
 ## 🤝 Contact & Support
 For custom enterprise integrations or premium support:
-- **WhatsApp:** [Message us directly](https://wa.me/yournumber)
+- **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
+- **Admin Guide:** [View 10-Language Secret Admin Guide](ADMIN_GUIDE.md)
 - **Website:** [www.otonomkantar.com](http://www.otonomkantar.com)
 
 ---
