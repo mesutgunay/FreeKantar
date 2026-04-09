@@ -415,7 +415,7 @@ namespace FreeKantar.UI
                 {
                     var sb = new StringBuilder();
                     // CSV Header
-                    sb.AppendLine("ID;İşlem;Ürün;Plaka;Şoför;Sevk Yeri;1. Tartım;2. Tartım;3. Tartım;İlave Beton;Eski İade;Net;Tarih;Durum;Düzenleme Durumu");
+                    sb.AppendLine("ID;İşlem;Stok;Plaka;Şoför;Sevk Yeri;1. Tartım;2. Tartım;3. Tartım;İlave Beton;Eski İade;Net;Tarih;Durum;Düzenleme Durumu");
                     
                     foreach (var r in records)
                     {
@@ -644,7 +644,7 @@ namespace FreeKantar.UI
 
             if (cbProduct.SelectedItem == null)
             {
-                MessageBox.Show("Lütfen ürün seçin.");
+                MessageBox.Show(_lang.Translate("PleaseSelectProduct") ?? "Lütfen stok seçin.");
                 return;
             }
 
@@ -708,7 +708,7 @@ namespace FreeKantar.UI
                 };
 
                 _db.SaveWeighingFirst(record);
-                MessageBox.Show("İlk tartım kaydedildi.");
+                MessageBox.Show(_lang.Translate("FirstWeightSaved") ?? "İlk tartım kaydedildi.");
                 ResetForm();
             }
             
@@ -776,7 +776,7 @@ namespace FreeKantar.UI
 
         private void AddProduct()
         {
-            using (var modal = new ProductModal(_db))
+            using (var modal = new ProductModal(_db, _lang))
             {
                 if (modal.ShowDialog() == DialogResult.OK)
                 {

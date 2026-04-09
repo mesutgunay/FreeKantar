@@ -4,12 +4,14 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using FreeKantar.Data;
 using FreeKantar.Models;
+using FreeKantar.Services;
 
 namespace FreeKantar.UI
 {
     public class ProductModal : Form
     {
         private readonly DbService _db;
+        private readonly LanguageService _lang;
         private TextBox txtName;
         private TextBox txtCode;
         private Button btnSave;
@@ -17,16 +19,17 @@ namespace FreeKantar.UI
         private DataGridView gridProducts;
         private Product _selectedProduct = null;
 
-        public ProductModal(DbService db)
+        public ProductModal(DbService db, LanguageService lang)
         {
             _db = db;
+            _lang = lang;
             InitializeComponent();
             LoadProducts();
         }
 
         private void InitializeComponent()
         {
-            this.Text = "Ürün Yönetimi";
+            this.Text = _lang.Translate("StockManagement");
             this.Size = new Size(600, 600);
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.StartPosition = FormStartPosition.CenterParent;
@@ -54,18 +57,18 @@ namespace FreeKantar.UI
             var pnlForm = new Panel { Dock = DockStyle.Fill, Padding = new Padding(20) };
             mainLayout.Controls.Add(pnlForm, 0, 0);
 
-            var lblName = new Label { Text = "Ürün Adı:", Location = new Point(20, 20), AutoSize = true, Font = new Font("Segoe UI", 9, FontStyle.Bold) };
+            var lblName = new Label { Text = _lang.Translate("StockName") + ":", Location = new Point(20, 20), AutoSize = true, Font = new Font("Segoe UI", 9, FontStyle.Bold) };
             txtName = new TextBox { Location = new Point(20, 45), Width = 540 };
             pnlForm.Controls.Add(lblName);
             pnlForm.Controls.Add(txtName);
 
-            var lblCode = new Label { Text = "Ürün Kodu:", Location = new Point(20, 85), AutoSize = true, Font = new Font("Segoe UI", 9, FontStyle.Bold) };
+            var lblCode = new Label { Text = _lang.Translate("StockCode") + ":", Location = new Point(20, 85), AutoSize = true, Font = new Font("Segoe UI", 9, FontStyle.Bold) };
             txtCode = new TextBox { Location = new Point(20, 110), Width = 540 };
             pnlForm.Controls.Add(lblCode);
             pnlForm.Controls.Add(txtCode);
 
             btnSave = new Button { 
-                Text = "KAYDET", 
+                Text = _lang.Translate("Save"), 
                 Location = new Point(20, 155), 
                 Size = new Size(110, 40),
                 BackColor = Color.FromArgb(34, 197, 94),
@@ -78,7 +81,7 @@ namespace FreeKantar.UI
             pnlForm.Controls.Add(btnSave);
 
             var btnDeleteForm = new Button { 
-                Text = "SİL", 
+                Text = _lang.Translate("Delete"), 
                 Location = new Point(140, 155), 
                 Size = new Size(110, 40),
                 BackColor = Color.FromArgb(239, 68, 68), // Red
@@ -91,7 +94,7 @@ namespace FreeKantar.UI
             pnlForm.Controls.Add(btnDeleteForm);
 
             btnCancel = new Button { 
-                Text = "TEMİZLE", 
+                Text = _lang.Translate("Clear"), 
                 Location = new Point(260, 155), 
                 Size = new Size(110, 40),
                 BackColor = Color.FromArgb(203, 213, 225),
@@ -126,7 +129,7 @@ namespace FreeKantar.UI
             
             // Context Menu for Delete
             var cms = new ContextMenuStrip();
-            cms.Items.Add("Ürünü SİL", null, (s, e) => DeleteProduct());
+            cms.Items.Add(_lang.Translate("DeleteStock"), null, (s, e) => DeleteProduct());
             gridProducts.ContextMenuStrip = cms;
 
             gridProducts.CellDoubleClick += (s, e) => SelectProduct();
@@ -140,8 +143,8 @@ namespace FreeKantar.UI
             if (gridProducts.Columns.Count > 0)
             {
                 gridProducts.Columns["Id"].Visible = false;
-                gridProducts.Columns["Name"].HeaderText = "ÜRÜN ADI";
-                gridProducts.Columns["Code"].HeaderText = "ÜRÜN KODU";
+                gridProducts.Columns["Name"].HeaderText = _lang.Translate("StockName").ToUpper();
+                gridProducts.Columns["Code"].HeaderText = _lang.Translate("StockCode").ToUpper();
             }
         }
 
@@ -152,7 +155,7 @@ namespace FreeKantar.UI
             
             txtName.Text = _selectedProduct.Name;
             txtCode.Text = _selectedProduct.Code;
-            btnSave.Text = "GÜNCELLE";
+            btnSave.Text = _lang.Translate("UpdateStock");
             btnSave.BackColor = Color.FromArgb(59, 130, 246); // Blue for update
         }
 
@@ -161,7 +164,7 @@ namespace FreeKantar.UI
             _selectedProduct = null;
             txtName.Clear();
             txtCode.Clear();
-            btnSave.Text = "KAYDET";
+            btnSave.Text = _lang.Translate("AddStock");
             btnSave.BackColor = Color.FromArgb(34, 197, 94); // Green for add
         }
 
@@ -169,21 +172,21 @@ namespace FreeKantar.UI
         {
             if (string.IsNullOrWhiteSpace(txtName.Text))
             {
-                MessageBox.Show("Ürün adı boş olamaz.");
+                MessageBox.Show(_lang.Translate("StockNameRequired"));
                 return;
             }
 
             if (_selectedProduct == null)
             {
                 _db.AddProduct(new Product { Name = txtName.Text, Code = txtCode.Text });
-                MessageBox.Show("Ürün eklendi.");
+                MessageBox.Show(_lang.Translate("StockAdded"));
             }
             else
             {
                 _selectedProduct.Name = txtName.Text;
                 _selectedProduct.Code = txtCode.Text;
                 _db.UpdateProduct(_selectedProduct);
-                MessageBox.Show("Ürün güncellendi.");
+                MessageBox.Show(_lang.Translate("StockUpdated"));
             }
 
             ClearForm();
@@ -196,7 +199,8 @@ namespace FreeKantar.UI
             if (gridProducts.SelectedRows.Count == 0) return;
             var prod = (Product)gridProducts.SelectedRows[0].DataBoundItem;
 
-            var result = MessageBox.Show($"'{prod.Name}' ürününü silmek istediğinize emin misiniz?", "Silme Onayı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            var msg = string.Format(_lang.Translate("StockDeleteConfirm"), prod.Name);
+            var result = MessageBox.Show(msg, _lang.Translate("DeleteStock"), MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
                 try
@@ -207,7 +211,7 @@ namespace FreeKantar.UI
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Ürün silinemedi. Bu ürüne ait tartım kayıtları olabilir.\nHata: " + ex.Message);
+                    MessageBox.Show(_lang.Translate("StockDeleteError") + "\nHata: " + ex.Message);
                 }
             }
         }

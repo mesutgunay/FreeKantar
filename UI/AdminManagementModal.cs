@@ -113,7 +113,7 @@ namespace FreeKantar.UI
             AddStyledField("İŞLEM TİPİ", cbTransaction, "TransactionType");
 
             cbProduct = new ComboBox { DropDownStyle = ComboBoxStyle.DropDownList };
-            AddStyledField("ÜRÜN", cbProduct, "Product");
+            AddStyledField(_lang.Translate("Product"), cbProduct, "Product");
 
             txtPlate = new TextBox(); AddStyledField("PLAKA", txtPlate, "Plate");
             txtDriverName = new TextBox(); AddStyledField("ŞOFÖR AD", txtDriverName, "DriverName");
