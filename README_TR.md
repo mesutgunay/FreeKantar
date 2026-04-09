@@ -1,0 +1,53 @@
+# Otonom Kantar: Profesyonel Çok Dilli Kantar Yazılımı 🚛⚖️🌍
+
+[![Dil: Türkçe](https://img.shields.io/badge/Dil-Türkçe-red.svg)](#)
+[![Language: English](https://img.shields.io/badge/Language-English-blue.svg)](README.md)
+
+**Otonom Kantar**, modern endüstriyel tartım süreçleri için tasarlanmış, yüksek performanslı ve taşınabilir (portable) bir kantar yazılımıdır. **10 farklı küresel dil** desteği ve **4 farklı fiş formatı** ile dünya standartlarında bir tartım deneyimi sunar.
+
+---
+
+## 📸 Ekran Görüntüleri
+*(Yakında - Resimlerinizi docs/images/ klasörüne ekleyin)*
+
+![Ana Ekran](docs/images/01_main_dashboard.png)
+*Modern ve yüksek okunurluklu tartım arayüzü.*
+
+---
+
+## 🌟 Öne Çıkan Özellikler
+- **🌍 10 Dil Desteği:** TR, EN, AR, RU, DE, ES, RO, BG, SR, SQ dillerinde tam yerelleştirme.
+- **📜 Esnek Fiş Sistemi:** İşletmenize uygun formatı seçin:
+  - 80mm / 50mm Termal Rulo (Kağıt tasarrufu optimize edildi)
+  - Standart Kantar Fişi (11x24 cm)
+  - A5 Profesyonel Yatay Format
+- **🦾 Admin Yönetimi:** Gelişmiş stok yönetimi, geçmiş veri filtreleme ve güvenli kayıt düzenleme.
+- **📦 Kurulum Gerektirmez (Portable):** Tek bir `FreeKantar.exe` dosyası - indir ve hemen çalıştır.
+- **🛡️ Veri Güvenliği:** SQLite veritabanı ile tek tıkla anlık yedekleme ve geri yükleme.
+- **🏷️ Kurumsal Tasarım:** Üçüncü taraf reklam içermeyen, sade ve profesyonel fiş dökümleri.
+
+---
+
+## 🔧 Kurumsal & Pro Çözümler
+`.NET 8` altyapısı ile geliştirilen Otonom Kantar, hız ve stabilite için optimize edilmiştir. Üst segment ihtiyaçlarınız için hazırdır:
+- **ERP/SAP/IFS** Bağlantısı.
+- **SQL Server** veritabanı eşitleme.
+- **AI Destekli** Plaka Tanıma Sistemi (LPR) entegrasyonu.
+
+---
+
+## 📥 Başlangıç
+1. **[Releases](https://github.com/yourusername/FreeKantar/releases)** sayfasına gidin.
+2. En güncel `FreeKantar.exe` dosyasını indirin.
+3. Bağlantı: İndikatörünüzü bağlayın, Baud Rate ayarını yapın ve tartıma başlayın!
+
+---
+
+## 🤝 İletişim & Destek
+Özel kurumsal entegrasyonlar veya premium destek için:
+- **WhatsApp:** [Doğrudan Mesaj Gönderin](https://wa.me/yournumber)
+- **Web Sitesi:** [www.otonomkantar.com](http://www.otonomkantar.com)
+
+---
+
+*bu yazılım gösterim ve ücretsiz endüstriyel kullanım amacıyla taşınabilir bir yürütülebilir dosya olarak yayınlanmıştır.*
