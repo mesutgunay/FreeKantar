@@ -34,12 +34,14 @@ namespace FreeKantar.Services
                     pd.DefaultPageSettings.PaperSize = new PaperSize("Thermal50mm", 197, 500);
                     break;
                 case "StandardKantar":
+                    // 24cm width, 11cm height
                     pd.DefaultPageSettings.PaperSize = new PaperSize("Standard11x24", 945, 433);
-                    pd.DefaultPageSettings.Landscape = true;
+                    pd.DefaultPageSettings.Landscape = false; // Dimensions are already landscape
                     break;
                 case "A5Horizontal":
-                    pd.DefaultPageSettings.PaperSize = new PaperSize("A5Horizontal", 827, 583);
-                    pd.DefaultPageSettings.Landscape = true;
+                    // 210mm width, 148mm height
+                    pd.DefaultPageSettings.PaperSize = new PaperSize("A5", 827, 583);
+                    pd.DefaultPageSettings.Landscape = false; // Dimensions are already landscape
                     break;
                 default: // Thermal80
                     pd.DefaultPageSettings.PaperSize = new PaperSize("Thermal80mm", 315, 500);
@@ -62,8 +64,9 @@ namespace FreeKantar.Services
             
             // Dynamic sizing
             float pageWidth = e.PageSettings.PaperSize.Width;
-            float leftMargin = 10;
-            float rightMargin = 10;
+            float leftMargin = (sizeKey == "A5Horizontal" || sizeKey == "StandardKantar") ? 50 : 10;
+            float rightMargin = leftMargin;
+            float y = (sizeKey == "A5Horizontal" || sizeKey == "StandardKantar") ? 40 : 10;
             
             // Adjust fonts based on width
             float baseSize = (sizeKey == "Thermal50") ? 7f : 8f;
@@ -77,7 +80,6 @@ namespace FreeKantar.Services
             Pen dashPen = new Pen(Color.Black, 1) { DashStyle = System.Drawing.Drawing2D.DashStyle.Dash };
             Pen solidPen = new Pen(Color.Black, 1);
 
-            float y = 10;
             float contentWidth = pageWidth - (leftMargin + rightMargin);
 
             // 1. Header
