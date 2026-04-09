@@ -141,6 +141,10 @@ namespace FreeKantar.UI
             var kantarSettings = new ToolStripMenuItem { Tag = "KantarSettings" };
             kantarSettings.Click += (s, e) => ShowSettings();
             settingsMenu.DropDownItems.Add(kantarSettings);
+
+            var receiptSettings = new ToolStripMenuItem { Tag = "ReceiptSettings" };
+            receiptSettings.Click += (s, e) => ShowReceiptSettings();
+            settingsMenu.DropDownItems.Add(receiptSettings);
             
             var langMenu = new ToolStripMenuItem { Tag = "Language" };
             foreach (LanguageService.Language l in Enum.GetValues(typeof(LanguageService.Language)))
@@ -782,6 +786,14 @@ namespace FreeKantar.UI
                 {
                     LoadData();
                 }
+            }
+        }
+
+        private void ShowReceiptSettings()
+        {
+            using (var modal = new ReceiptSettingsModal(_db, _lang))
+            {
+                modal.ShowDialog();
             }
         }
 

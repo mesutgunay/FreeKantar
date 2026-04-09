@@ -22,55 +22,87 @@ namespace FreeKantar.Services
         public void PrintReceipt(WeighingRecord record)
         {
             _record = record;
+            string sizeKey = _db.GetSetting("ReceiptSize", "Thermal80");
             
             PrintDocument pd = new PrintDocument();
-            // 80mm width = ~315 units. Shortened default height to 500 for more compact preview.
-            pd.DefaultPageSettings.PaperSize = new PaperSize("Thermal80mm", 315, 500);
+            
+            // Define paper sizes (100 DPI units)
+            // 80mm = ~315, 50mm = ~197, 11x24cm = ~433x945, A5 = ~827x583
+            switch (sizeKey)
+            {
+                case "Thermal50":
+                    pd.DefaultPageSettings.PaperSize = new PaperSize("Thermal50mm", 197, 500);
+                    break;
+                case "StandardKantar":
+                    pd.DefaultPageSettings.PaperSize = new PaperSize("Standard11x24", 433, 945);
+                    break;
+                case "A5Horizontal":
+                    pd.DefaultPageSettings.PaperSize = new PaperSize("A5Horizontal", 827, 583);
+                    pd.DefaultPageSettings.Landscape = true;
+                    break;
+                default: // Thermal80
+                    pd.DefaultPageSettings.PaperSize = new PaperSize("Thermal80mm", 315, 500);
+                    break;
+            }
+
             pd.PrintPage += new PrintPageEventHandler(PrintPageHandler);
 
             PrintPreviewDialog ppd = new PrintPreviewDialog();
             ppd.Document = pd;
-            ppd.Width = 500;
-            ppd.Height = 600;
+            ppd.Width = 600;
+            ppd.Height = 800;
             ppd.ShowDialog();
         }
 
         private void PrintPageHandler(object sender, PrintPageEventArgs e)
         {
+            string sizeKey = _db.GetSetting("ReceiptSize", "Thermal80");
             Graphics g = e.Graphics;
-            Font titleFont = new Font("Segoe UI", 11, FontStyle.Bold);
-            Font headFont = new Font("Segoe UI", 8, FontStyle.Bold);
-            Font bodyFont = new Font("Segoe UI", 8);
-            Font netFont = new Font("Segoe UI", 13, FontStyle.Bold);
+            
+            // Dynamic sizing
+            float pageWidth = e.PageSettings.PaperSize.Width;
+            float leftMargin = 10;
+            float rightMargin = 10;
+            
+            // Adjust fonts based on width
+            float baseSize = (sizeKey == "Thermal50") ? 7f : 8f;
+            if (sizeKey == "A5Horizontal") baseSize = 10f;
+            
+            Font titleFont = new Font("Segoe UI", baseSize + 3, FontStyle.Bold);
+            Font headFont = new Font("Segoe UI", baseSize, FontStyle.Bold);
+            Font bodyFont = new Font("Segoe UI", baseSize);
+            Font netFont = new Font("Segoe UI", baseSize + 5, FontStyle.Bold);
+            
             Pen dashPen = new Pen(Color.Black, 1) { DashStyle = System.Drawing.Drawing2D.DashStyle.Dash };
             Pen solidPen = new Pen(Color.Black, 1);
 
             float y = 10;
-            float leftMargin = 10;
-            float rightMargin = 10;
-            float pageWidth = 315;
             float contentWidth = pageWidth - (leftMargin + rightMargin);
 
-            // 1. Header (Ultra-Compact)
+            // 1. Header
             string company = _db.GetSetting("CompanyName", "FREE KANTAR").ToUpper();
             string scaleNo = _db.GetSetting("ScaleNo", "").ToUpper();
             
             g.DrawString(company, titleFont, Brushes.Black, new RectangleF(0, y, pageWidth, 50), new StringFormat { Alignment = StringAlignment.Center });
-            y += 18;
+            y += (baseSize + 10);
+            
             if (!string.IsNullOrEmpty(scaleNo)) {
-                g.DrawString(scaleNo, new Font("Segoe UI", 9, FontStyle.Bold), Brushes.Black, new RectangleF(0, y, pageWidth, 40), new StringFormat { Alignment = StringAlignment.Center });
-                y += 18;
+                g.DrawString(scaleNo, new Font("Segoe UI", baseSize + 1, FontStyle.Bold), Brushes.Black, new RectangleF(0, y, pageWidth, 40), new StringFormat { Alignment = StringAlignment.Center });
+                y += (baseSize + 10);
             }
 
             g.DrawLine(solidPen, leftMargin, y, leftMargin + contentWidth, y);
             y += 8;
 
             // 2. Main Info
+            float labelWidth = (sizeKey == "Thermal50") ? 70 : 100;
+            if (sizeKey == "A5Horizontal") labelWidth = 150;
+
             void DrawRow(string label, string value) {
                 if (string.IsNullOrEmpty(value)) return;
                 g.DrawString(label, headFont, Brushes.Black, leftMargin, y);
-                g.DrawString(": " + value, bodyFont, Brushes.Black, leftMargin + 100, y);
-                y += 16;
+                g.DrawString(": " + value, bodyFont, Brushes.Black, leftMargin + labelWidth, y);
+                y += (baseSize + 8);
             }
 
             DrawRow(_lang.Translate("Plate"), _record.Plate);
@@ -99,30 +131,36 @@ namespace FreeKantar.Services
 
             y += 4;
             g.DrawString(_lang.Translate("Net").ToUpper(), netFont, Brushes.Black, leftMargin, y);
-            g.DrawString($": {_record.NetWeight:N0} KG", netFont, Brushes.Black, leftMargin + 80, y);
-            y += 25;
+            g.DrawString($": {_record.NetWeight:N0} KG", netFont, Brushes.Black, leftMargin + labelWidth, y);
+            y += (baseSize + 15);
 
             g.DrawLine(solidPen, leftMargin, y, leftMargin + contentWidth, y);
             y += 8;
 
-            // 4. Signatures (Highly Compact)
+            // 4. Signatures
             void DrawSig(string label) {
                 g.DrawString(label, headFont, Brushes.Black, leftMargin, y);
-                y += 20;
-                g.DrawString("__________________________", bodyFont, Brushes.Black, leftMargin, y);
-                y += 18;
+                y += (baseSize + 12);
+                g.DrawString("________________________________", bodyFont, Brushes.Black, leftMargin, y);
+                y += (baseSize + 10);
             }
 
-            DrawSig(_lang.Translate("DriverSignature"));
-            DrawSig(_lang.Translate("ReceiverSignature"));
+            if (sizeKey == "A5Horizontal" || sizeKey == "StandardKantar") {
+                // Side-by-side for wide formats could be added here, but keep single column for simplicity first
+                DrawSig(_lang.Translate("DriverSignature"));
+                DrawSig(_lang.Translate("ReceiverSignature"));
+            } else {
+                DrawSig(_lang.Translate("DriverSignature"));
+                DrawSig(_lang.Translate("ReceiverSignature"));
+            }
 
             // 5. Footer
             y += 2;
             g.DrawLine(dashPen, leftMargin, y, leftMargin + contentWidth, y);
             y += 5;
-            g.DrawString($"{_lang.Translate("Date")}: {DateTime.Now:dd.MM.yyyy HH:mm}", new Font("Segoe UI", 7), Brushes.Gray, leftMargin, y);
-            y += 10;
-            g.DrawString("Software by FreeKantar", new Font("Segoe UI", 6), Brushes.Silver, leftMargin, y);
+            g.DrawString($"{_lang.Translate("Date")}: {DateTime.Now:dd.MM.yyyy HH:mm}", new Font("Segoe UI", baseSize - 1), Brushes.Gray, leftMargin, y);
+            y += (baseSize + 2);
+            g.DrawString("Software by FreeKantar", new Font("Segoe UI", baseSize - 2), Brushes.Silver, leftMargin, y);
         }
     }
 }
