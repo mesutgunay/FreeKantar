@@ -61,7 +61,7 @@
 ## 🤝 Контакт и поддръжка
 За персонализирани корпоративни интеграции или премиум поддръжка:
 - **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
-- **Email:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
-- **Web Sitesi:** [www.otonomkantar.com](http://www.otonomkantar.com)
+- **E-mail:** [bilgi@otomatikkantar.com.tr](mailto:bilgi@otomatikkantar.com.tr)
+- **Website:** [www.otomatikkantar.com.tr](http://www.otomatikkantar.com.tr)
 
 ---
