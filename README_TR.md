@@ -61,8 +61,8 @@ Gelişmiş özelliklere (Stok yönetimi, Kayıt temizleme) erişmek için:
 ## 🤝 İletişim & Destek
 Özel kurumsal entegrasyonlar veya premium destek için:
 - **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
-- **E-posta:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
-- **Web Sitesi:** [www.otonomkantar.com](http://www.otonomkantar.com)
+- **E-mail:** [bilgi@otomatikkantar.com.tr](mailto:bilgi@otomatikkantar.com.tr)
+- **Websitesi:** [www.otomatikkantar.com.tr](http://www.otomatikkantar.com.tr)
 
 ---
 
