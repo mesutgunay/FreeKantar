@@ -61,8 +61,8 @@ Built on `.NET 8`, FreeKantar is optimized for speed and stability. It is ready 
 ## 🤝 Contact & Support
 For custom enterprise integrations or premium support:
 - **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
-- **E-mail:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
-- **Website:** [www.otonomkantar.com](http://www.otonomkantar.com)
+- **E-mail:** [info@otonomkantar.com](mailto:bilgi@otomatikkantar.com.tr)
+- **Website:** [www.otonomkantar.com](http://www.otomatikkantar.com.tr)
 
 ---
 
