@@ -61,7 +61,8 @@ Bazat pe `.NET 8`, FreeKantar este optimizat pentru viteză și stabilitate. Est
 ## 🤝 Contact și Suport
 Pentru integrări personalizate sau suport premium:
 - **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
-- **E-mail:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
+- **E-mail:** [bilgi@otomatikkantar.com.tr](mailto:bilgi@otomatikkantar.com.tr)
+- **Website:** [www.otomatikkantar.com.tr](http://www.otomatikkantar.com.tr)
 - **Ghid Admin:** [Vezi Ghidul Admin Secret în 10 Limbi](ADMIN_GUIDE.md)
 
 ---
