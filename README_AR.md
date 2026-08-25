@@ -61,7 +61,8 @@
 ## 🤝 التواصل والدعم
 للتكامل المخصص مع المؤسسات أو الدعم المتميز:
 - **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
-- **E-mail:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
+- **E-mail:** [bilgi@otomatikkantar.com.tr](mailto:bilgi@otomatikkantar.com.tr)
+- **Website:** [www.otomatikkantar.com.tr](http://www.otomatikkantar.com.tr)
 - **دليل المسؤول:** [عرض دليل المسؤول السري بـ 10 لغات](ADMIN_GUIDE.md)
 
 ---
