@@ -61,7 +61,8 @@ Izgrađen na `.NET 8`, FreeKantar je optimizovan za brzinu i stabilnost. Spreman
 ## 🤝 Kontakt i podrška
 Za prilagođene korporativne integracije ili premium podršku:
 - **WhatsApp:** [+90 533 545 16 80](https://wa.me/905335451680)
-- **Email:** [info@otonomkantar.com](mailto:info@otonomkantar.com)
+- **E-mail:** [bilgi@otomatikkantar.com.tr](mailto:bilgi@otomatikkantar.com.tr)
+- **Website:** [www.otomatikkantar.com.tr](http://www.otomatikkantar.com.tr)
 - **Admin vodič:** [Pogledajte tajni admin vodič na 10 jezika](ADMIN_GUIDE.md)
 
 ---
